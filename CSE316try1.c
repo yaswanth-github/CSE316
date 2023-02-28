@@ -13,7 +13,7 @@ void *student3();
 pthread_mutex_t lck;
 
 int ch1,ch2;
-int r1,r2;
+
 
 int main()
 {	
@@ -29,9 +29,10 @@ int main()
 	
 	printf("Resources Menu: \n\t\tPress '1' for pen\n\t\tPress '2' for paper \n\t\tPress '3' for   question_paper \n"); 	
 
-	while(1)
-	{
-	if(student[1][4]==1 && student[2][4]==1 && student[3][4]==1){break;}
+	while(1){
+	if(student[1][4]==1 && student[2][4]==1 && student[3][4]==1){
+		break;}
+		
 	pthread_create(&t_thread, NULL, teacher, NULL);
 	pthread_join(t_thread,NULL);
 	    
