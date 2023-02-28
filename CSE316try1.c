@@ -6,6 +6,7 @@
 int student[3][4]={0};
 
 void *teacher();
+
 void *student1();
 void *student2();
 void *student3();
@@ -14,11 +15,10 @@ pthread_mutex_t lck;
 
 int ch1,ch2;
 
-
 int main()
 {	
 	printf("\t\t\t---Welcome---\n");
-	pthread_mutex_init(&lck,NULL);\
+	pthread_mutex_init(&lck,NULL);
 	
 	student[1][1]=1;
 	student[2][2]=2;
@@ -36,18 +36,12 @@ int main()
 	pthread_create(&t_thread, NULL, teacher, NULL);
 	pthread_join(t_thread,NULL);
 	    
-	if((ch1==1 && ch2==2 || ch2==1 && ch1==2 ) && student[3][4]==0)
-	{
-		pthread_create(&s_thread, NULL, student3, NULL);
-		pthread_join(s_thread,NULL);
-	}
-	else if((ch1==1 && ch2==3 || ch2==1 && ch1==3 ) && student[2][4]==0)
+	if((ch1==1 && ch2==3 || ch2==1 && ch1==3 ) && student[2][4]==0)
 	{
 		pthread_create(&s_thread, NULL, student2, NULL);
 		pthread_join(s_thread,NULL);
 	}
 
-printf("\n\t----Done---\n");
 }
 
 
@@ -71,3 +65,4 @@ void *student1()
 }
 
 }
+
