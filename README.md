@@ -27,3 +27,12 @@ teacher comes, then that teacher would get the service next. This process might
 continue leading to increase in waiting time of students. Ensure in your program 
 that the waiting time of students is minimized.
 </p>
+
+<p>
+If Your try to run in terminal first you need to run code like 
+[gcc <filename.c>]
+gcc os_sba1.c
+
+then run 
+./a.out for output for the os_sba1.c code
+</p>
