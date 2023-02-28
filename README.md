@@ -30,7 +30,7 @@ that the waiting time of students is minimized.
 
 <p>
 If Your try to run in terminal first you need to run code like 
-[gcc <filename.c>]
+gcc filename.c
 gcc os_sba1.c
 
 then run 
