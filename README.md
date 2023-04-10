@@ -1,6 +1,20 @@
-# CSE316
-Simulation Based Assignment
-<p>
+# CSE 316 Assignment
+This repository contains my solutions for Simulation-based 
+Academic Task of Operating System CSE316 for the Academic Year 2022 (Semester 4).
+
+## Personal Information
+
+Name : Lankadasu Naga Venkata Yaswanth
+
+Registration Number : 12104843
+
+Roll Number : K21CHA10
+
+Section : K21CH
+
+Group : 1
+
+## Question
 
 Q1. There are 3 student processes and 1 teacher process. Students are supposed to do their 
 assignments and they need 3 things for that-pen, paper and question paper. The teacher has an 
@@ -26,13 +40,15 @@ the system works in a non-chaotic manner.
 teacher comes, then that teacher would get the service next. This process might 
 continue leading to increase in waiting time of students. Ensure in your program 
 that the waiting time of students is minimized.
-</p>
 
-<p>
-If Your try to run in terminal first you need to run code like 
-gcc filename.c
-gcc os_sba1.c
 
-then run 
-./a.out for output for the os_sba1.c code
-</p>
+## Want to compile manually?
+- Compile by firing the following command in the respective TASK directories
+```sh
+$ gcc filename.c
+$ gcc os_sba1.c
+```
+- Run the executable object file by issuing the following command
+```sh
+$ ./a.out
+```
