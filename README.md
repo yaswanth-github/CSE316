@@ -45,8 +45,7 @@ that the waiting time of students is minimized.
 ## Want to compile manually?
 - Compile by firing the following command in the respective TASK directories
 ```sh
-$ gcc filename.c
-$ gcc os_sba1.c
+$ gcc CSE316try1.c
 ```
 - Run the executable object file by issuing the following command
 ```sh
